@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,500;1,600&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+
+::root {
+  --black: #000;
+  --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-list li a {
+  color: var(--black);
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.navbar-list li a::selection {
+  background-color: #c8c8c8;
+}
+
+.logo-navbar {
+  font-size: 2rem;
+  color: green;
+}
+
+.logo-back {
+  font-size: 2rem;
+  color: #535353;
+}
+
+.instagram {
+  color: black;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Expositor */
+
+.expositor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  background-color: #c8c3bf;
+}
+
+.medidas {
+  position: absolute;
+  bottom: 10.5%;
+  right: 30%;
+  font-size: 0.7rem;
+  background-color: #b9b7b4;
+  border: 1px solid black;
+  padding: 0 0.4rem;
+  font-family: "Open sans", serif;
+  text-align: center;
+}
+
+.bags {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bag-card {
+  width: 150px;
+  height: 150px;
+}
+
+.bag-card:nth-child(2) {
+  background: url(/Cartera/assets/carteratrapillo2.jpg) no-repeat center/cover;
+}
+
+.bag-card:first-child {
+  background: url(/Cartera/assets/carteratrapillo1.jpg) no-repeat center/cover;
+  border-radius: 50px 0 0 0;
+  -webkit-border-radius: 50px 0 0 0;
+  -moz-border-radius: 50px 0 0 0;
+  -ms-border-radius: 50px 0 0 0;
+  -o-border-radius: 50px 0 0 0;
+}
+
+.bag-card:last-child {
+  background: url(/Cartera/assets/carteratrapillo3.jpg) no-repeat center/cover;
+  border-radius: 0 0 0 50px;
+  -webkit-border-radius: 0 0 0 50px;
+  -moz-border-radius: 0 0 0 50px;
+  -ms-border-radius: 0 0 0 50px;
+  -o-border-radius: 0 0 0 50px;
+}
+
+.img-expositor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 65%;
+  margin-left: -10px;
+  background: url(/Cartera/assets/carteratrapillo4.jpg) no-repeat right/cover;
+}
+
+.text {
+  position: absolute;
+  top: -15px;
+  font-size: 1.3rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  color: #323232;
+  background-color: #b2b0aea4;
+}
+
+.price {
+  font-size: 1.3rem;
+  padding: 0.2rem;
+  border: 1px solid black;
+  border-radius: 5px 0 5px 0;
+  background-color: white;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  -webkit-border-radius: 5px 0 5px 0;
+  -moz-border-radius: 5px 0 5px 0;
+  -ms-border-radius: 5px 0 5px 0;
+  -o-border-radius: 5px 0 5px 0;
+}
